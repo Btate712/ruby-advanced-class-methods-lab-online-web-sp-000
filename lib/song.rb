@@ -31,9 +31,9 @@ class Song
   end
 
   def self.find_by_name(song_name)
-    all.each do |song|
-      if song.name = song_name
-        return song
+    for i in 0..all.length
+      if all[i].name == song_name
+        return all[i]
       end
     end
     return false

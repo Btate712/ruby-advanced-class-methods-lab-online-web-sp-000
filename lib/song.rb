@@ -31,7 +31,7 @@ class Song
   end
 
   def self.find_by_name(song_name)
-    for i in 0..all.length
+    for i in 0..all.length - 1
       if all[i].name == song_name
         return all[i]
       end
